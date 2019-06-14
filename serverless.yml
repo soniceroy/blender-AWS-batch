@@ -50,7 +50,9 @@ provider:
 #  include:
 #    - include-me.py
 #    - include-me-dir/**
-#  exclude:
+  exclude:
+    - .gitignore
+    - ./container/**
 #    - exclude-me.py
 #    - exclude-me-dir/**
 
