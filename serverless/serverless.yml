@@ -112,4 +112,4 @@ functions:
 #   which ensures that the python libs will be 64-bit-linux centric
 custom:
   pythonRequirements:
-    dokerizePip: true
+    dockerizePip: true
