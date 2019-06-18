@@ -3,6 +3,12 @@ import logging
 import boto3
 from botocore.exceptions import ClientError
 
+# allows for print statements to log into Cloudwatch
+# The --log option will show logs on the commandline
+# eg:  serverless invoke -f upload --log
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
 def upload_fileobj(file_obj, bucket, object_name):
     """Upload a file to an S3 bucket
 
